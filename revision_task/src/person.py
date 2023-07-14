@@ -5,8 +5,11 @@ class Person:
         self.wallet = wallet
         self.shopping_list = []
 
-    def add_to_list(self):
-        self.shopping_list.append
+    def add_to_list(self, item):
+        self.shopping_list.append(item)
 
-    def remove_from_list(self):
-        self.shopping_list.remove
+    def remove_from_list(self, item):
+        self.shopping_list.remove(item)
+
+person = Person("Bob", 30)
+person.add_to_list("Apples")
